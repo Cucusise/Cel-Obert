@@ -1,7 +1,27 @@
-.pcontent{
 
+.pcontent{
+    width: 100%;
 }
 
+.pbar{
+    display: flex;
+    justify-content: center;
+}
+
+progress[value] {
+    width: 250px;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #365486
+  }
+
+progress[value]::-webkit-progress-value {
+    background-color: #DCF2F1;
+  }
 .ptext{
     color: #DCF2F1;
     font-size: 100px;

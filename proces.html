@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylep.css">
+    <script src="https://kit.fontawesome.com/a303a097bb.js" crossorigin="anonymous"></script>
     <title>Passadís Summarí</title>
 </head>
 <body>
@@ -21,15 +22,39 @@
 
     <main>
 
+        <div class="bar-content">
+            <p class="title">PROCÉS</p>
 
-
-        <div class="pcontent">
-        <p class="ptext">Actualment estem...</p>
-            <div class="pbar">
-                <progress max="100" value="10" class="progress"></progress>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+                <div class="status-icons">
+                    <div class="status-icon"><i class="fa-solid fa-file"></i></div>
+                    <div class="status-icon"><i class="fa-solid fa-hand"></i></i></div>
+                    <div class="status-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <div class="status-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+                </div>
             </div>
+            
+            <div class="text">
+                <p>PLANIFICANT</p>
+                <p>CREANT</p>
+                <p>EN PROCÉS</p>
+                <p>FINALITZAT</p>
+            </div>
+            
         </div>
+
     </main>
 
+    <script>
+        // Función para actualizar el progreso
+        function updateProgress(progress) {
+            var progressBar = document.getElementById('progress');
+            progressBar.style.width = progress + '%';
+        }
+        
+        // Llamada a la función con un valor de progreso específico (por ejemplo, 50%)
+        updateProgress(36);
+    </script>
 </body>
 </html>

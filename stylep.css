@@ -1,28 +1,121 @@
-
-.pcontent{
-    width: 100%;
+.navbar{
+    
+    text-align: right;
+    position: relative;
+    z-index: 1;
 }
 
-.pbar{
+a{
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+    background: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+
+}
+
+ul{
+    list-style: none;
+    text-align: right;
+    background: none;
+    text-decoration: none;
+}
+
+
+/* Estilos para los círculos de los iconos */
+.status-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    margin: 5px; /* Ajusta el margen según sea necesario */
+    border: 2px solid #000; /* Añadir un borde negro */
+}
+
+/* Estilos para los iconos */
+.fa-file, .fa-hand, .fa-screwdriver-wrench, .fa-flag-checkered {
+    color: blue; /* Cambia el color del icono */
+}
+
+/* Estilos para la barra de progreso */
+.progress-bar {
+    position: relative;
+    width: 75%;
+    height: 50px;
+    background-color: #365486;
+    border-radius: 25px;
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para los iconos de progreso */
+.status-icons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para los iconos de progreso */
+.status-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    margin: 5px; /* Ajusta el margen según sea necesario */
+    border: 2px solid #000; /* Añadir un borde negro */
+}
+
+/* Estilos para la barra de progreso */
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Inicialmente sin progreso */
+    height: 100%;
+    background-color: #DCF2F1;
+    border-radius: 25px;
+    transition: width 0.3s ease; /* Agrega una transición suave */
+}
+
+.text{
+    width: 75%;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-flow: row;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.bar-content{
+    width: 100%;
+    flex-flow:column ;
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
 
-progress[value] {
-    width: 250px;
-    height: 20px;
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-progress[value]::-webkit-progress-bar {
-    background-color: #365486
-  }
-
-progress[value]::-webkit-progress-value {
-    background-color: #DCF2F1;
-  }
-.ptext{
-    color: #DCF2F1;
-    font-size: 100px;
+.title{
+    margin: 20px 0 50px 200px;
+    align-self: left;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
 }

@@ -1,41 +1,40 @@
-*{
+* {
+    padding: 0;
     margin: 0;
     color: #DCF2F1;
 }
 
-body{
+body {
     background: #0F1035;
-
 }
 
-.navbar{
-    
+.navbar {
     text-align: right;
     position: relative;
+    height: 100%;
     z-index: 1;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     display: inline-block;
     margin: 10px;
     background: none;
-    text-decoration: none;
     font-family: "Roboto", sans-serif;
-
+    font-size: 15px; /* Tamaño de fuente explícito */
 }
 
-ul{
+ul {
     list-style: none;
     text-align: right;
     background: none;
-    text-decoration: none;
+    font-size: 15px;
 }
 
-.maint{
+.maint {
     margin-top: 50px;
     text-align: center;
     font-size: 100px;
@@ -43,20 +42,9 @@ ul{
     color: #DCF2F1;
     position: relative;
     z-index: 2;
-
-
 }
 
-.ola{
-    position: absolute;
-    top: calc(100% - 50px);
-    bottom: 0; /* ajusta la posición superior según sea necesario */
-    left: 0; /* ajusta la posición izquierda según sea necesario */
-    right: 0; /* ajusta la posición derecha según sea necesario */
-    z-index: 1;
-}
-
-.heading{
+.heading {
     width: 100%;
     height: 320px;
     display: block;
@@ -65,15 +53,14 @@ ul{
     background-color: #365486;
     box-shadow: #0F1035 0 20px 20px 25px;
     z-index: 0;
-    
 }
 
-.olac{
+.ola,
+.olac {
     position: absolute;
-    bottom: 0;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 0;
 }
-

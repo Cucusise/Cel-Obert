@@ -55,8 +55,7 @@ ul {
     z-index: 0;
 }
 
-.ola,
-.olac {
+.ola, .olac {
     position: absolute;
     top: 0;
     bottom: 0;

@@ -1,0 +1,77 @@
+.maindiv{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+
+}
+.content{
+    height: 600px;
+    width: 750px;
+    background-color: #365486;
+    border-radius: 10px;
+    transition: width 0.3s ease, height 0.3s ease;
+    box-shadow: 0 0 10px 10px #090a22;
+}
+
+.content:hover{
+    height: 650px;
+    width: 800px;
+}
+
+.title{
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.text{
+    font-family: "Roboto", sans-serif;
+    margin: 10px 0 10px 10px;
+    font-size: 15px;
+}
+
+.contacts{
+    display: flex;
+    flex-flow: row;
+}
+.centre{
+    height: auto;
+    width: 50%;
+    border-right: 3px solid black;
+    text-align: center;
+}
+
+.map {
+    height: 130px;
+    width: 330px;
+    margin: 0 10px 0 10px;
+    transition: height 0.5s ease, width 0.5s ease;
+}
+
+.content:hover .map {
+    margin: 0 10px 0 10px;
+    height: 180px;
+    width: 380px;
+}
+
+.projecte{
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.logo{
+    margin: 0 20px 0 0;
+    width: 125px;
+    height: 147.4px;
+    text-align: center;
+}
+
+.image-content{
+    width: auto;
+    height: auto;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}

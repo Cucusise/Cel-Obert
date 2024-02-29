@@ -1,70 +1,78 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Passadís Submarí</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Passadís Submarí</title>
+    </head>
+    <body>
 
-<header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">INICI</a></li>
-            <li><a href="proces.html">PROCÉS</a></li>
-            <li><a href="info.html">INFORMACIÓ</a></li>
-            <li><a href="contact.html">CONTACTE</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">INICI</a></li>
+                <li><a href="proces.html">PROCÉS</a></li>
+                <li><a href="info.html">INFORMACIÓ</a></li>
+                <li><a href="contact.html">CONTACTE</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="heading">
-        <p class="maint">Passadís Submarí</p>
-        <p class="text">UN PROJECTE QUE VETLLA PER EL BENESTAR DELS MARS</p>
-        <div class="olac">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f1035" fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,224C640,235,800,213,960,192C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" class="ola"></path></svg>
+    <main>
+       <div>
+        <p class="text, ex">El passadís submarí es un projecte enfocat a la conservació sobre la necesitat del benestar del medi aquatic.</p>
+       </div> 
+        
+        <div class="heading">
+            <p class="maint">Passadís Submarí</p>
+            <p class="text">UN PROJECTE QUE VETLLA PER EL BENESTAR DELS MARS</p>
+            <div class="olac">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f1035" fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,224C640,235,800,213,960,192C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" class="ola"></path></svg>
+            </div>
         </div>
-    </div>
+        
+        <div class="slider">
+            <div class="slide"><img src="IMG1.heic" alt="Image 1"></div>
+            <div class="slide"><img src="IMG2.heic" alt="Image 2"></div>
+            <div class="slide"><img src="IMG3.heic" alt="Image 3"></div>
+            <div class="slide"><img src="IMG4.heic" alt="Image 4"></div>
+            <div class="slide"><img src="IMG5.heic" alt="Image 5"></div>
+            <div class="slide"><img src="IMG6.heic" alt="Image 6"></div>
+        </div>
 
-    <div class="slider">
-        <div class="slide"><img src="IMG1.heic" alt="Image 1"></div>
-        <div class="slide"><img src="IMG2.heic" alt="Image 2"></div>
-        <div class="slide"><img src="IMG3.heic" alt="Image 3"></div>
-    </div>
-</header>
 
-<main>
-    <!-- Contenido principal aquí -->
-</main>
-<script>
+    </main>
+    <script>
     let slideIndex = 0;
-showSlide(slideIndex);
-
-function showSlide(n) {
+    showSlide(slideIndex);
+    function showSlide(n) {
     const slides = document.getElementsByClassName("slide");
     if (n >= slides.length) { slideIndex = 0; }
     if (n < 0) { slideIndex = slides.length - 1; }
     for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("show");
+        slides[i].classList.remove("show"); // Quita la clase 'show' de todas las diapositivas
     }
-    slides[slideIndex].classList.add("show");
+    slides[slideIndex].classList.add("show"); // Agrega la clase 'show' a la diapositiva actual
 }
 
-function nextSlide() {
-    showSlide(++slideIndex);
-}
 
-function prevSlide() {
-    showSlide(--slideIndex);
-}
 
-// Cambiar automáticamente las diapositivas cada 3 segundos (3000 milisegundos)
-setInterval(nextSlide, 3000);
+    function nextSlide() {
+        showSlide(++slideIndex);
+    }
 
-</script>
-</body>
-</html>
+    function prevSlide() {
+        showSlide(--slideIndex);
+    }
+
+    // Cambiar automáticamente las diapositivas cada 3 segundos (3000 milisegundos)
+    setInterval(nextSlide, 3000);
+
+    </script>
+    </body>
+    </html>

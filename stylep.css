@@ -134,6 +134,7 @@ a{
     width: 400px;
     background-color: #365486;
     border-radius: 20px;
+    box-shadow: 0 0 10px 10px #090a22;
 }
 
 .creant{
@@ -142,6 +143,7 @@ a{
     width: 400px;
     background-color: #365486;
     border-radius: 20px;
+    box-shadow: 0 0 10px 10px #090a22;
 }
 
 .pro{
@@ -150,6 +152,7 @@ a{
     width: 400px;
     background-color: #365486;
     border-radius: 20px;
+    box-shadow: 0 0 10px 10px #090a22;
 }
 
 .ctitle{

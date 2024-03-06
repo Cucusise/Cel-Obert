@@ -7,12 +7,26 @@ margin: 20px 10px 0 0;
 font-size: 40px
 }
 
+.titlet{
+    margin: 20px 10px 0 0;
+    font-size: 40px;
+    text-align: center;
+    }
+
 .text{
     width: 95%;
     text-align:justify;
 }
-
-.container{
+.mainc{
     display: flex;
     justify-content: center;
+    margin: 100px;
+}
+.container{
+    height: auto;
+    width: 500px;
+    background-color: #365486;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px #090a22;
 }
